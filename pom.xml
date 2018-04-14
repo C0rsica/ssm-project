@@ -1,178 +1,29 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>top.yangluotong.project</groupId>
-  <artifactId>ssm-template</artifactId>
-  <packaging>war</packaging>
+  <artifactId>all-in-one</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>ssm-template Maven Webapp</name>
-  <url>http://maven.apache.org</url>
 
-  <!--版本号-->
-  <properties>
-    <springframework.version>4.3.14.RELEASE</springframework.version>
-    <mysqlconnector.version>5.1.44</mysqlconnector.version>
-    <mybatis.version>3.4.2</mybatis.version>
-    <mybatis.spring.version>1.3.1</mybatis.spring.version>
-  </properties>
-
-  <dependencyManagement>
-    <dependencies>
-      <!--解决Spring依赖版本冲突-->
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-framework-bom</artifactId>
-        <version>${springframework.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+  <modules>
+    <module>ssm-template-without-xml</module>
+    <module>design-pattern</module>
+    <module>zookeeper-dubbo-client</module>
+    <module>Algorithm</module>
+    <module>ssm-template</module>
+    <module>zookeeper-dubbo</module>
+  </modules>
 
   <dependencies>
-
-    <!--spring相关-->
+    <!--servlet-->
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-beans</artifactId>
-    </dependency>
-
-    <!--Spring mvc-->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-    </dependency>
-
-    <!--jdbc-->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
-    </dependency>
-
-    <!--mysql-->
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>${mysqlconnector.version}</version>
-    </dependency>
-
-    <!--mybatis-->
-    <dependency>
-      <groupId>org.mybatis</groupId>
-      <artifactId>mybatis</artifactId>
-      <version>${mybatis.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.mybatis</groupId>
-      <artifactId>mybatis-spring</artifactId>
-      <version>${mybatis.spring.version}</version>
-    </dependency>
-
-    <!--数据库连接池-->
-    <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>druid</artifactId>
-      <version>1.0.20</version>
-    </dependency>
-
-
-    <!--日志-->
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.25</version>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>1.2.1</version>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-core</artifactId>
-      <version>1.2.1</version>
-    </dependency>
-
-
-    <!--Guava工具-->
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>24.1-jre</version>
-    </dependency>
-
-
-    <!--测试TestNG,Mockito,Unitils-->
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>6.10</version>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-core</artifactId>
-      <version>2.17.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.unitils</groupId>
-      <artifactId>unitils-mock</artifactId>
-      <version>3.4.2</version>
-      <scope>test</scope>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
     </dependency>
   </dependencies>
-
-  <profiles>
-    <!--本地开发环境-->
-    <profile>
-      <id>dev</id>
-      <properties>
-        <profiles.active>dev</profiles.active>
-      </properties>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-    </profile>
-    <!--测试环境-->
-    <profile>
-      <id>test</id>
-      <properties>
-        <profiles.active>test</profiles.active>
-      </properties>
-    </profile>
-
-    <!--生产环境-->
-    <profile>
-      <id>pro</id>
-      <properties>
-        <profiles.active>pro</profiles.active>
-      </properties>
-    </profile>
-
-  </profiles>
-
-  <build>
-    <finalName>ssm-template</finalName>
-    <resources>
-      <resource>
-        <directory>src/main/resources</directory>
-        <excludes>
-          <exclude>test/*</exclude>
-          <exclude>pro/*</exclude>
-          <exclude>dev/*</exclude>
-        </excludes>
-      </resource>
-      <resource>
-        <directory>src/main/resources/${profiles.active}</directory>
-      </resource>
-    </resources>
-
-  </build>
 </project>
