@@ -14,7 +14,6 @@ import org.joda.time.format.DateTimeFormat;
  * @date 2018/4/11
  * @time 上午7:53
  */
-@Slf4j
 public class DateUtil {
 
   public static void main(String[] args) {
@@ -25,9 +24,9 @@ public class DateUtil {
     DateTimeFormatter dt = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
 // Parsing the date
 //    LocalDate date = LocalDate.parse(dt, inputFormat);
-    log.info("joda time test:" + dt);
+//    log.info("joda time test:" + dt);
     DateUtil du = new DateUtil();
-    log.info("isafterPayday:" + du.isAfterPayDay(new DateTime()));
+//    log.info("isafterPayday:" + du.isAfterPayDay(new DateTime()));
   }
 
 

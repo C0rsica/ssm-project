@@ -16,6 +16,9 @@
     <module>Algorithm</module>
     <module>ssm-template</module>
     <module>zookeeper-dubbo</module>
+      <module>spring-config</module>
+    <module>spring-all-with-java</module>
+    <module>spring-all-with-xml</module>
   </modules>
 
   <dependencies>

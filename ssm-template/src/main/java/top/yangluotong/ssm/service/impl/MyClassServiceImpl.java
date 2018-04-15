@@ -16,10 +16,10 @@ import top.yangluotong.ssm.service.MyClassService;
 public class MyClassServiceImpl implements MyClassService {
 
   @Autowired
-  MyClassDao classDao;
+  MyClassDao myClassDao;
 
   public List<MyClass> selectAll() {
-    return classDao.selectAll();
+    return myClassDao.selectAll();
   }
 
 }
