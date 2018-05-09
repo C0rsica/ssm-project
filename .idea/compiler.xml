@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="algorithm" />
+        <module name="Algorithm" />
+        <module name="design-pattern" />
+        <module name="spring-all-with-java" />
+        <module name="spring-all-with-xml" />
+        <module name="spring-config" />
+        <module name="ssm-template" />
+        <module name="ssm-template-without-xml" />
+        <module name="zookeeper-dubbo" />
+        <module name="zookeeper-dubbo-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="algorithm" target="7" />
+      <module name="all-in-one" target="1.8" />
+      <module name="design-pattern" target="8" />
+      <module name="spring-all-with-java" target="1.8" />
+      <module name="spring-all-with-xml" target="1.8" />
+      <module name="spring-config" target="7" />
+      <module name="ssm-template" target="1.8" />
+      <module name="ssm-template-without-xml" target="1.8" />
+      <module name="zookeeper-dubbo" target="1.8" />
+      <module name="zookeeper-dubbo-client" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

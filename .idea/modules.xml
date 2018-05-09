@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-in-one.iml" filepath="$PROJECT_DIR$/all-in-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-pattern/design-pattern.iml" filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-all-with-java/spring-all-with-java.iml" filepath="$PROJECT_DIR$/spring-all-with-java/spring-all-with-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-all-with-xml/spring-all-with-xml.iml" filepath="$PROJECT_DIR$/spring-all-with-xml/spring-all-with-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-config/spring-config.iml" filepath="$PROJECT_DIR$/spring-config/spring-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-template/ssm-template.iml" filepath="$PROJECT_DIR$/ssm-template/ssm-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-template-without-xml/ssm-template-without-xml.iml" filepath="$PROJECT_DIR$/ssm-template-without-xml/ssm-template-without-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper-dubbo/zookeeper-dubbo.iml" filepath="$PROJECT_DIR$/zookeeper-dubbo/zookeeper-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper-dubbo-client/zookeeper-dubbo-client.iml" filepath="$PROJECT_DIR$/zookeeper-dubbo-client/zookeeper-dubbo-client.iml" />
+    </modules>
+  </component>
+</project>

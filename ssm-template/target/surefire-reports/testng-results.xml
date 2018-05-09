@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="top.yangluotong.ssm.dao.ClassDaoTest" duration-ms="29" started-at="2018-04-14T18:04:52Z" finished-at="2018-04-14T18:04:52Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="29" started-at="2018-04-14T18:04:52Z" finished-at="2018-04-14T18:04:52Z">
+      <class name="top.yangluotong.ssm.dao.ClassDaoTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:top.yangluotong.ssm.dao.ClassDaoTest@5315b42e]" name="setUp" is-config="true" duration-ms="6" started-at="2018-04-15T02:04:52Z" finished-at="2018-04-15T02:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSelectAll()[pri:0, instance:top.yangluotong.ssm.dao.ClassDaoTest@5315b42e]" name="testSelectAll" duration-ms="1" started-at="2018-04-15T02:04:52Z" finished-at="2018-04-15T02:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectAll -->
+      </class> <!-- top.yangluotong.ssm.dao.ClassDaoTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- top.yangluotong.ssm.dao.ClassDaoTest -->
+</testng-results>
